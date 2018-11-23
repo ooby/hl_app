@@ -1,0 +1,22 @@
+<md-card ng-if="!$root.logged" style="max-width: 600px" layout-fill>
+    <md-card-title layout="column" layout-align="center center">
+        <md-card-title-text layout="column" layout-align="center center">
+            <span class="md-headline">Hyperledger demo app</span>
+            <span class="md-subhead">Распределенное хранилище</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="center center">
+        <md-button class="md-primary md-raised" ng-href="login">Вход</md-button>
+    </md-card-actions>
+</md-card>
+<md-card ng-if="$root.logged" style="max-width: 600px" layout-fill>
+    <md-card-title layout="column" layout-align="center center">
+        <md-card-title-text layout="column" layout-align="center center">
+            <span class="md-headline">Hyperledger demo app</span>
+            <span class="md-subhead">Распределенное хранилище</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="center center">
+        <md-button class="md-primary md-raised" ng-href="profile">Мои файлы</md-button>
+    </md-card-actions>
+</md-card>

@@ -1,0 +1,28 @@
+<md-card style="max-width: 600px" layout-fill>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">Вход</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-content>
+        <form ng-submit="doLogin()" layout="column" name="loginForm" layout-align="center stretch">
+            <md-input-container class="md-block">
+                <label>Email</label>
+                <input ng-model="login.email" required ng-pattern="/^[a-zA-Z0-9\.]+@[a-zA-Z0-9\.]+\.[a-z]+$/" name="email">
+                <div ng-messages="loginForm.email.$error" role="alert">
+                    <div ng-message="required">Поле не может быть пустым</div>
+                    <div ng-message="pattern">Неправильный формат e-mail</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Пароль</label>
+                <input ng-model="login.password" type="password" required name="password" minlength="6">
+                <div ng-messages="loginForm.password.$error" role="alert">
+                    <div ng-message="required">Поле не может быть пустым</div>
+                    <div ng-message="minlength">Длина пароля не менее 6 символов</div>
+                </div>
+            </md-input-container>
+            <md-button type="submit" class="md-primary md-raised">Войти</md-button>            
+        </form>
+    </md-card-content>
+</md-card>
