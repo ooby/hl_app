@@ -36,8 +36,13 @@ function auth($q, $http, $apiEndpoint, $rootScope, $window, $location) {
         return composeReq('POST', $apiEndpoint, 'api/login', null, data, $q, $http, $rootScope);
     };
     authFactory.logout = function () {
-        $window.localStorage.removeItem('access');
+        $window.localStorage.removeItem('token');
         $location.path('/');
+    };
+    authFactory.logged = function () {
+        var token = $window.localStorage.getItem('token');
+        if (token) { return true; }
+        else { return false; }
     };
     return authFactory;
 };

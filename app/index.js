@@ -1,4 +1,3 @@
-var angular = require('angular');
+require('code/app');
 require('code/controllers');
 require('code/services');
-require('code/app');

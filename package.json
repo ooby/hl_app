@@ -4,6 +4,7 @@
   "description": "Hyperledger demo app",
   "main": "index.js",
   "scripts": {
+    "test": "mocha tests --timeout 5000 --exit",
     "start": "node .",
     "start:dev": "webpack-dev-server"
   },
@@ -23,12 +24,6 @@
   },
   "homepage": "https://github.com/ooby/hl_app#readme",
   "dependencies": {
-    "angular": "1.7.5",
-    "angular-route": "1.7.5",
-    "angular-animate": "1.7.5",
-    "angular-aria": "1.7.5",
-    "angular-messages": "1.7.5",
-    "angular-material": "1.1.10",
     "webpack": "4.26.0",
     "clean-webpack-plugin": "1.0.0",
     "copy-webpack-plugin": "4.6.0",
