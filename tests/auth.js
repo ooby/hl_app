@@ -29,7 +29,7 @@ describe('Auth test', () => {
     describe('[POST] /api/login > ', () => {
         it('account login', done => {
             const body = {
-                email: 'user@mail.ru',
+                email: 'email@mail.ru',
                 password: 'obanabana'
             };
             chai.request(server)

@@ -30,6 +30,7 @@
     "uglifyjs-webpack-plugin": "2.0.1",
     "async": "2.6.1",
     "body-parser": "1.18.3",
+    "connect-busboy": "0.0.2",
     "express": "4.16.4",
     "http-errors": "1.7.1",
     "jsonwebtoken": "8.4.0",
